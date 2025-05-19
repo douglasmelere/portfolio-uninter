@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Meu Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Importando fonte do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho da página com menu de navegação -->
+    <header>
+        <div class="container">
+            <h1>Meu Portfólio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre Mim</a></li>
+                    <li><a href="formacao.html">Formação</a></li>
+                    <li><a href="portfolio.html" class="active">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <section class="portfolio-section">
+            <div class="container">
+                <h2>Meus Projetos</h2>
+                <p class="section-intro">Abaixo estão alguns dos projetos que desenvolvi. Cada um representa diferentes habilidades e técnicas de desenvolvimento web.</p>
+                
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="website">Websites</button>
+                    <button class="filter-btn" data-filter="app">Aplicações</button>
+                </div>
+                
+                <div class="portfolio-grid">
+                    <!-- Projeto 1 -->
+                    <div class="portfolio-item" data-category="website">
+                        <div class="portfolio-image">
+                            <img class="project-placeholder website-placeholder" src="https://www.minhareceita.com.br/app/uploads/2022/12/pizza-de-pepperoni-caseira-portal-minha-receita.jpg"></img>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3>Site Responsivo de Pizzaria</h3>
+                            <p>Um site completo com menu interativo, sistema de aquisição de pizza e design totalmente responsivo.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <a href="https://douglasmelere.github.io/E-commerce-Pizzas/" class="btn btn-small">Ver Projeto</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Projeto 2 -->
+                    <div class="portfolio-item" data-category="app">
+                        <div class="portfolio-image">
+                            <img class="project-placeholder app-placeholder" src="https://www.justicaeleitoral.jus.br/imagens/fotos/saiba-mais-sobre-a-seguranca-da-urna-eletronica/@@streaming/image/2023-09-12-seguran%C3%A7a-urna.jpg"></img>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3>Aplicativo de Urna Eletrônica</h3>
+                            <p>Uma aplicação web para simulação de uma urna eletrônica.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <a href="https://douglasmelere.github.io/Urna-eletronica/" class="btn btn-small">Ver Projeto</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Projeto 3 -->
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img class="project-placeholder design-placeholder" src="https://i.ytimg.com/vi/SazrvkE7t-g/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBXiaP0JNUOCiWQ_MTtjwt5-2igng"></img>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3>Validador de Formulário</h3>
+                            <p>Projeto de um formulário para validação de dados.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <a href="https://douglasmelere.github.io/Form-validator/" class="btn btn-small">Ver Projeto</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Projeto 4 -->
+                    <div class="portfolio-item" data-category="website">
+                        <div class="portfolio-image">
+                            <img class="project-placeholder website-placeholder" src="https://pagluz.com.br/assets/LOGO%20NOVA%20SVG.svg"></img>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3>Website PagLuz</h3>
+                            <p>Front-end completo para a empresa PagLuz.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                            </div>
+                            <a href="https://pagluz.com.br" class="btn btn-small">Ver Projeto</a>
+                        </div>
+                    </div>
+
+                     <!-- Projeto 5 -->
+                     <div class="portfolio-item" data-category="website">
+                        <div class="portfolio-image">
+                            <img class="project-placeholder website-placeholder" src="https://www.jqueryscript.net/images/Lightweight-Responsive-jQuery-Slider-Plugin-Simple-Slideshow.jpg"></img>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3>Simple Slider</h3>
+                            <p>Slider simples com algumas imagens para teste.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <a href="https://douglasmelere.github.io/Simple-Slider/" class="btn btn-small">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

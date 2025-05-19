@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Meu Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Importando fonte do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho da página com menu de navegação -->
+    <header>
+        <div class="container">
+            <h1>Meu Portfólio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre Mim</a></li>
+                    <li><a href="formacao.html">Formação</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <section class="contato-section">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <p class="section-intro">Tem interesse em trabalhar comigo ou quer saber mais sobre meus serviços? Preencha o formulário abaixo e entrarei em contato assim que possível.</p>
+                
+                <div class="contato-container">
+                    <div class="contato-info">
+                        <h3>Informações de Contato</h3>
+                        <div class="info-item">
+                            <div class="info-icon email-icon"></div>
+                            <div class="info-text">
+                                <h4>E-mail</h4>
+                                <p>douglasmelere@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon phone-icon"></div>
+                            <div class="info-text">
+                                <h4>Telefone</h4>
+                                <p>(49) 99933-0101</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon location-icon"></div>
+                            <div class="info-text">
+                                <h4>Localização</h4>
+                                <p>Ibicaré, SC - Brasil</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h4>Redes Sociais</h4>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/douglas-junior-22840b2a4/" class="social-icon linkedin-icon" title="LinkedIn"></a>
+                                <a href="https://github.com/douglasmelere" class="social-icon github-icon" title="GitHub"></a>
+                                <a href="https://instgram.com/douglasmelere" class="social-icon instagram-icon" title="Instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contato-form">
+                        <h3>Envie uma Mensagem</h3>
+                        <!-- Formulário de contato (apenas visual, conforme solicitado) -->
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="assunto">Assunto</label>
+                                <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
