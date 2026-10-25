@@ -1,3 +1,21 @@
+/* Base de leitura e dimensões para todas as páginas. */
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font-family: Roboto, Arial, sans-serif; color: #263445; background: #f8f9fa; line-height: 1.6; }
+h1, h2, h3, h4 { line-height: 1.25; }
+a { color: #1a4c80; text-underline-offset: 0.2em; }
+.container { width: calc(100% - 2rem); max-width: 1152px; margin-inline: auto; }
+img { max-width: 100%; object-fit: cover; }
+button, input, textarea { font: inherit; }
+button { min-height: 44px; }
+nav ul { padding: 0; flex-wrap: wrap; gap: 0.5rem; }
+.btn, nav a, .social-icon { text-decoration: none; }
+footer { padding: 2rem 1rem; text-align: center; background: #e9f2fa; }
+.info-text { min-width: 0; overflow-wrap: anywhere; }
+@media (max-width: 576px) {
+  .contato-info, .contato-form { padding: 1.25rem; min-width: 0; }
+  .skill-card { min-width: 0; flex-basis: 100%; }
+}
+
 /* ===== HEADER E NAVEGAÇÃO ===== */
 header {
   background-color: #ffffff;
@@ -751,3 +769,13 @@ footer {
       text-align: center;
   }
 }
+/* Navegação por teclado e preferência de movimento. */
+.skip-link { position: absolute; left: 1rem; top: 0; transform: translateY(-120%); background: #fff; color: #123b68; padding: 1rem; z-index: 100; }
+.skip-link:focus { transform: translateY(0); }
+:focus-visible { outline: 3px solid #123b68; outline-offset: 4px; }
+#form-status { margin-top: 1rem; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+
+@media (max-width: 576px) { .portfolio-grid { grid-template-columns: minmax(0, 1fr); } }

@@ -89,10 +89,11 @@ document.addEventListener('DOMContentLoaded', function() {
           }
           
           if (isValid) {
-              // Aqui normalmente enviaria os dados para o servidor
-              // Como é apenas visual, exibimos uma mensagem de sucesso
-              alert('Mensagem enviada com sucesso! Obrigado por entrar em contato.');
-              contactForm.reset();
+              const body = `Nome: ${nome}\nE-mail para retorno: ${email}\n\n${mensagem}`;
+              const mailto = `mailto:douglasmelere@gmail.com?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(body)}`;
+              document.getElementById('form-status').textContent =
+                  'Mensagem preparada. Confirme o envio no aplicativo de e-mail. Se ele não abrir, escreva para douglasmelere@gmail.com. Seus campos foram mantidos.';
+              window.location.href = mailto;
           } else {
               alert(errorMessage);
           }

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://douglasmelere.github.io/portfolio-uninter/sitemap.xml

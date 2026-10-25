@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato | Meu Portfólio</title>
+    <title>Contato com Douglas Melere | Portfólio acadêmico</title>
+    <meta name="description" content="Entre em contato com Douglas Melere por e-mail, LinkedIn ou GitHub.">
+    <link rel="canonical" href="https://douglasmelere.github.io/portfolio-uninter/contato.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Contato com Douglas Melere | Portfólio acadêmico">
+    <meta property="og:description" content="Entre em contato com Douglas Melere por e-mail, LinkedIn ou GitHub.">
+    <meta property="og:url" content="https://douglasmelere.github.io/portfolio-uninter/contato.html">
     <link rel="stylesheet" href="css/style.css">
     <!-- Importando fonte do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <!-- Cabeçalho da página com menu de navegação -->
     <header>
         <div class="container">
-            <h1>Meu Portfólio</h1>
-            <nav>
+            <h1>Douglas Melere</h1>
+            <nav aria-label="Navegação principal">
                 <ul>
                     <li><a href="index.html">Início</a></li>
                     <li><a href="sobre.html">Sobre Mim</a></li>
@@ -26,11 +34,11 @@
     </header>
 
     <!-- Conteúdo principal da página -->
-    <main>
+    <main id="conteudo" tabindex="-1">
         <section class="contato-section">
             <div class="container">
                 <h2>Entre em Contato</h2>
-                <p class="section-intro">Tem interesse em trabalhar comigo ou quer saber mais sobre meus serviços? Preencha o formulário abaixo e entrarei em contato assim que possível.</p>
+                <p class="section-intro">Tem interesse em trabalhar comigo ou quer saber mais sobre meus serviços? Use meu e-mail ou preencha o formulário para preparar uma mensagem no seu aplicativo de e-mail. Você confirma o envio nele.</p>
                 
                 <div class="contato-container">
                     <div class="contato-info">
@@ -39,7 +47,7 @@
                             <div class="info-icon email-icon"></div>
                             <div class="info-text">
                                 <h4>E-mail</h4>
-                                <p>douglasmelere@gmail.com</p>
+                                <p><a href="mailto:douglasmelere@gmail.com">douglasmelere@gmail.com</a></p>
                             </div>
                         </div>
                         <div class="info-item">
@@ -60,17 +68,17 @@
                         <div class="social-links">
                             <h4>Redes Sociais</h4>
                             <div class="social-icons">
-                                <a href="https://www.linkedin.com/in/douglas-junior-22840b2a4/" class="social-icon linkedin-icon" title="LinkedIn"></a>
-                                <a href="https://github.com/douglasmelere" class="social-icon github-icon" title="GitHub"></a>
-                                <a href="https://instgram.com/douglasmelere" class="social-icon instagram-icon" title="Instagram"></a>
+                                <a href="https://www.linkedin.com/in/douglas-melere-22840b2a4/" class="social-icon linkedin-icon" title="LinkedIn" aria-label="LinkedIn de Douglas Melere"></a>
+                                <a href="https://github.com/douglasmelere" class="social-icon github-icon" title="GitHub" aria-label="GitHub de Douglas Melere"></a>
+                                <a href="https://instagram.com/douglasmelere" class="social-icon instagram-icon" title="Instagram" aria-label="Instagram de Douglas Melere"></a>
                             </div>
                         </div>
                     </div>
                     
                     <div class="contato-form">
-                        <h3>Envie uma Mensagem</h3>
-                        <!-- Formulário de contato (apenas visual, conforme solicitado) -->
-                        <form id="contact-form">
+                        <h3>Prepare uma mensagem por e-mail</h3>
+                        <!-- O visitante confirma o envio no próprio aplicativo de e-mail. -->
+                        <form id="contact-form" aria-describedby="form-status">
                             <div class="form-group">
                                 <label for="nome">Nome Completo</label>
                                 <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
@@ -91,8 +99,9 @@
                                 <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
                             </div>
                             
-                            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                            <button type="submit" class="btn btn-primary">Preparar e-mail</button>
                         </form>
+                        <p id="form-status" role="status">Este formulário prepara seu e-mail. O envio será confirmado por você no aplicativo de e-mail.</p>
                     </div>
                 </div>
             </div>
@@ -102,7 +111,7 @@
     <!-- Rodapé da página -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Douglas Melere. Todos os direitos reservados.</p>
         </div>
     </footer>
     <script src="script.js"></script>

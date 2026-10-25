@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Douglas Melere | Portfólio acadêmico</title>
+    <meta name="description" content="Portfólio acadêmico de Douglas Melere em HTML, CSS e JavaScript: apresentação, formação, projetos e contato.">
+    <link rel="canonical" href="https://douglasmelere.github.io/portfolio-uninter/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Douglas Melere | Portfólio acadêmico">
+    <meta property="og:description" content="Portfólio acadêmico de Douglas Melere em HTML, CSS e JavaScript: apresentação, formação, projetos e contato.">
+    <meta property="og:url" content="https://douglasmelere.github.io/portfolio-uninter/">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <!-- Cabeçalho da página com menu de navegação -->
     <header>
         <div class="container">
-            <h1>Meu Portfólio</h1>
-            <nav>
+            <h1>Douglas Melere</h1>
+            <nav aria-label="Navegação principal">
                 <ul>
                     <li><a href="index.html" class="active">Início</a></li>
                     <li><a href="sobre.html">Sobre Mim</a></li>
@@ -25,19 +33,19 @@
     </header>
 
     <!-- Conteúdo principal da página -->
-    <main>
+    <main id="conteudo" tabindex="-1">
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h2>Olá, sou Desenvolvedor Web</h2>
-                    <p>Bem-vindo ao meu portfólio online. Aqui você encontrará informações sobre minha formação, projetos e habilidades.</p>
+                    <h2>Olá, sou Douglas Melere</h2>
+                    <p>Este é meu portfólio acadêmico de Desenvolvimento Web, construído com HTML, CSS e JavaScript. Meu novo portfólio profissional está em construção.</p>
                     <div class="hero-buttons">
                         <a href="portfolio.html" class="btn btn-primary">Ver Projetos</a>
                         <a href="contato.html" class="btn btn-secondary">Entre em Contato</a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img class="profile-placeholder" src="https://github.com/douglasmelere.png"></img>
+                    <img class="profile-placeholder" src="https://github.com/douglasmelere.png" alt="Retrato de Douglas Melere">
                 </div>
             </div>
         </section>
@@ -69,7 +77,7 @@
     <!-- Rodapé da página -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Douglas Melere. Todos os direitos reservados.</p>
         </div>
     </footer>
     <script src="script.js"></script>
